@@ -1,0 +1,7 @@
+FROM {{ BASEIMAGE }}
+MAINTAINER {{ AUTHOR }}
+LABEL Author={{ AUTHOR }} Name={{ PROJECT }} Version={{ VERSION }}
+COPY ./dist/. /app
+COPY ./src/document/. /app/document
+EXPOSE 80
+ENTRYPOINT ["/app/trans-api", "--port=80", "--prefix=/trans/api"]

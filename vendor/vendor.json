@@ -1,0 +1,192 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "c5QbJjMUbbQk4RT75uawdmV4Jfo=",
+			"origin": "github.com/xormplus/xorm/vendor/github.com/Chronokeeper/anyxml",
+			"path": "github.com/Chronokeeper/anyxml",
+			"revision": "96822e6a7fc32fca3fa702b12c1fd712405c702c",
+			"revisionTime": "2018-08-24T01:27:01Z"
+		},
+		{
+			"checksumSHA1": "DUlvp47EJfeG59Xx462SJ9MA7u0=",
+			"origin": "github.com/xormplus/xorm/vendor/github.com/CloudyKit/fastprinter",
+			"path": "github.com/CloudyKit/fastprinter",
+			"revision": "96822e6a7fc32fca3fa702b12c1fd712405c702c",
+			"revisionTime": "2018-08-24T01:27:01Z"
+		},
+		{
+			"checksumSHA1": "SwujWL+oEHm5IKf0owxCTtNzFGQ=",
+			"origin": "github.com/xormplus/xorm/vendor/github.com/CloudyKit/jet",
+			"path": "github.com/CloudyKit/jet",
+			"revision": "96822e6a7fc32fca3fa702b12c1fd712405c702c",
+			"revisionTime": "2018-08-24T01:27:01Z"
+		},
+		{
+			"checksumSHA1": "AxWJDQDWvHM7VjLHdl6KBKrHwiQ=",
+			"origin": "github.com/xormplus/xorm/vendor/github.com/agrison/go-tablib",
+			"path": "github.com/agrison/go-tablib",
+			"revision": "96822e6a7fc32fca3fa702b12c1fd712405c702c",
+			"revisionTime": "2018-08-24T01:27:01Z"
+		},
+		{
+			"checksumSHA1": "KcCHg7UtwWWtVo9XsM0hLcDUZRA=",
+			"origin": "github.com/xormplus/xorm/vendor/github.com/agrison/mxj",
+			"path": "github.com/agrison/mxj",
+			"revision": "96822e6a7fc32fca3fa702b12c1fd712405c702c",
+			"revisionTime": "2018-08-24T01:27:01Z"
+		},
+		{
+			"checksumSHA1": "tNw6Ta2KSe3pfE3pDvDbLjStGVg=",
+			"origin": "github.com/xormplus/xorm/vendor/github.com/bndr/gotabulate",
+			"path": "github.com/bndr/gotabulate",
+			"revision": "96822e6a7fc32fca3fa702b12c1fd712405c702c",
+			"revisionTime": "2018-08-24T01:27:01Z"
+		},
+		{
+			"checksumSHA1": "QNKFdw3S/PyEibGJYAUoQqNUDWY=",
+			"origin": "github.com/xormplus/xorm/vendor/github.com/fatih/structs",
+			"path": "github.com/fatih/structs",
+			"revision": "96822e6a7fc32fca3fa702b12c1fd712405c702c",
+			"revisionTime": "2018-08-24T01:27:01Z"
+		},
+		{
+			"checksumSHA1": "hycyx9fdrMKhXX9lguWeUIOwPVM=",
+			"origin": "github.com/xormplus/xorm/vendor/github.com/fsnotify/fsnotify",
+			"path": "github.com/fsnotify/fsnotify",
+			"revision": "96822e6a7fc32fca3fa702b12c1fd712405c702c",
+			"revisionTime": "2018-08-24T01:27:01Z"
+		},
+		{
+			"checksumSHA1": "BhMowD2DIKSd9qq8Pzh7Y3mh2/w=",
+			"path": "github.com/gin-contrib/sse",
+			"revision": "22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae",
+			"revisionTime": "2017-01-09T09:34:21Z"
+		},
+		{
+			"checksumSHA1": "5c9MsYbbfe4+K5Tse0BmwjbGpQ4=",
+			"path": "github.com/gin-gonic/contrib/ginrus",
+			"revision": "39cfb9727134fef3120d2458fce5fab14265a46c",
+			"revisionTime": "2018-06-14T03:20:58Z"
+		},
+		{
+			"checksumSHA1": "1vt0EfroEmgjIqK6A6tehfBiiGg=",
+			"path": "github.com/gin-gonic/gin",
+			"revision": "220e8d34538f5dfdcc299dda79bf83cf52e633f6",
+			"revisionTime": "2018-07-20T16:52:55Z"
+		},
+		{
+			"checksumSHA1": "7NcNHPRI7I8XPF+abQTFcrSnKO8=",
+			"path": "github.com/gin-gonic/gin/binding",
+			"revision": "220e8d34538f5dfdcc299dda79bf83cf52e633f6",
+			"revisionTime": "2018-07-20T16:52:55Z"
+		},
+		{
+			"checksumSHA1": "ZrBlc4nW5joRSLLRThHlxU+bWtg=",
+			"path": "github.com/gin-gonic/gin/json",
+			"revision": "220e8d34538f5dfdcc299dda79bf83cf52e633f6",
+			"revisionTime": "2018-07-20T16:52:55Z"
+		},
+		{
+			"checksumSHA1": "7lVWMuL88LIWixvu89qZ9l/kXHw=",
+			"path": "github.com/gin-gonic/gin/render",
+			"revision": "220e8d34538f5dfdcc299dda79bf83cf52e633f6",
+			"revisionTime": "2018-07-20T16:52:55Z"
+		},
+		{
+			"checksumSHA1": "pyXfMxiZ0xJLF6RmFm9V1Trf4xM=",
+			"path": "github.com/go-xorm/builder",
+			"revision": "145c9968bfe732a56d7160439d25154c5aaa2f35",
+			"revisionTime": "2018-08-23T14:06:21Z"
+		},
+		{
+			"checksumSHA1": "jB0M44UzwxPK+xB31T2M/oKW5us=",
+			"path": "github.com/golang/protobuf/proto",
+			"revision": "93b26e6a70e37abb14f2f88194949312b0592a84",
+			"revisionTime": "2018-07-24T20:30:48Z"
+		},
+		{
+			"checksumSHA1": "Z7rkupTQRAZzzTCqDLiSbNR70to=",
+			"path": "github.com/konsorten/go-windows-terminal-sequences",
+			"revision": "f55edac94c9bbba5d6182a4be46d86a2c9b5b50e",
+			"revisionTime": "2019-02-26T22:47:05Z"
+		},
+		{
+			"checksumSHA1": "kum8izZy1+pVfDiApW5hT2HoH1w=",
+			"path": "github.com/mattn/go-isatty",
+			"revision": "6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c",
+			"revisionTime": "2017-11-07T05:05:31Z"
+		},
+		{
+			"checksumSHA1": "veKBU5FJfGTojLA0p08KGCFowno=",
+			"origin": "github.com/xormplus/xorm/vendor/github.com/mattn/go-runewidth",
+			"path": "github.com/mattn/go-runewidth",
+			"revision": "96822e6a7fc32fca3fa702b12c1fd712405c702c",
+			"revisionTime": "2018-08-24T01:27:01Z"
+		},
+		{
+			"checksumSHA1": "nZmomVnH99FHJcq01PN+ayviWPk=",
+			"path": "github.com/sirupsen/logrus",
+			"revision": "9b3cdde74fbe9443d704467498a7dcb61a79de9b",
+			"revisionTime": "2019-04-03T09:10:19Z"
+		},
+		{
+			"checksumSHA1": "ddOIPhRq8MDEMGxmxm5X67g2NK0=",
+			"path": "github.com/spf13/pflag",
+			"revision": "1cd4a0c365d95803411bec89fb7b76bade17053b",
+			"revisionTime": "2018-03-30T11:51:55Z"
+		},
+		{
+			"checksumSHA1": "gYQEChH469WJoMwu7idt5diczFM=",
+			"origin": "github.com/xormplus/xorm/vendor/github.com/tealeg/xlsx",
+			"path": "github.com/tealeg/xlsx",
+			"revision": "96822e6a7fc32fca3fa702b12c1fd712405c702c",
+			"revisionTime": "2018-08-24T01:27:01Z"
+		},
+		{
+			"checksumSHA1": "DRScazLhz8LcQnFUitRrLO+pV2s=",
+			"path": "github.com/ugorji/go/codec",
+			"revision": "2e1067cd04ec91c6fdf491ac8028c9d3aea73ab4",
+			"revisionTime": "2018-07-12T10:27:45Z"
+		},
+		{
+			"checksumSHA1": "GacqMSwzI1HV3Pf9mxeik5EUb4o=",
+			"path": "github.com/xormplus/core",
+			"revision": "72a33b1d155cdd4472605b72395bb1f9e9236c9a",
+			"revisionTime": "2018-05-04T10:38:59Z"
+		},
+		{
+			"checksumSHA1": "W3Fu5pnGDLyz7DWHZ3F4w8eE+SU=",
+			"path": "github.com/xormplus/xorm",
+			"revision": "96822e6a7fc32fca3fa702b12c1fd712405c702c",
+			"revisionTime": "2018-08-24T01:27:01Z"
+		},
+		{
+			"checksumSHA1": "PqZlazU/dKCEc8I353TYnUJNobw=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "e072cadbbdc8dd3d3ffa82b8b4b9304c261d9311",
+			"revisionTime": "2018-07-24T16:28:38Z"
+		},
+		{
+			"checksumSHA1": "jkRCiYi/YHOA4m3F+eFvw2mfgc0=",
+			"origin": "github.com/xormplus/xorm/vendor/gopkg.in/flosch/pongo2.v3",
+			"path": "gopkg.in/flosch/pongo2.v3",
+			"revision": "96822e6a7fc32fca3fa702b12c1fd712405c702c",
+			"revisionTime": "2018-08-24T01:27:01Z"
+		},
+		{
+			"checksumSHA1": "q190bL03wQok3wVwYmMub2XhOiU=",
+			"path": "gopkg.in/go-playground/validator.v8",
+			"revision": "5f1438d3fca68893a817e4a66806cea46a9e4ebf",
+			"revisionTime": "2017-07-30T05:02:35Z"
+		},
+		{
+			"checksumSHA1": "d3jYBfW+YmOxsa5o8m6XyywVbIo=",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "5420a8b6744d3b0345ab293f6fcba19c978f1183",
+			"revisionTime": "2018-03-28T19:50:20Z"
+		}
+	],
+	"rootPath": "ogsyoo/imageExport-api"
+}
