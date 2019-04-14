@@ -20,12 +20,23 @@ func Load(middleware ...gin.HandlerFunc) http.Handler {
 	e.Use(middleware...)
 	base := e.Group(fmt.Sprintf(`%s/`, conf.BaseInfo.Prefix))
 	{
+		sse := base.Group("/sse")
+		{
+			sse.GET("/event/:name", controller.Subcribe)
+			sse.GET("/publish", controller.Publish)
+		}
 		project := base.Group("/project")
 		{
 			project.GET("/list", controller.GetListPage)
 			project.POST("", controller.AddProject)
 			project.DELETE("", controller.DeleteProject)
-
+			project.GET("/images/:pid", controller.GetImageListPage)
+		}
+		image := base.Group("/image")
+		{
+			image.PUT("", controller.UpdateImageJob)
+			image.DELETE("/:id", controller.DeleteImageJob)
+			image.POST("/package", controller.PackageImage)
 		}
 		base.GET("/health", controller.Health)
 	}

@@ -16,10 +16,49 @@ func AddImageJob(c *gin.Context) {
 		return
 	}
 	isv := service.Image{}
-	a, err := isv.InsertImageList(listImage)
+	_, err := isv.InsertImageList(listImage)
 	if len(listImage) == 0 {
 		c.JSON(200, gin.H{"success": 0, "errMsg": err.Error()})
 		return
 	}
-	c.JSON(200, gin.H{"success": 1, "data": fmt.Sprint(`成功插入%d条数据`, a)})
+	c.JSON(200, gin.H{"success": 1, "data": "插入成功"})
+}
+
+//更新镜像信息
+func UpdateImageJob(c *gin.Context) {
+	image := new(dao.ImageJob)
+	c.Bind(image)
+	isv := service.Image{}
+	_, err := isv.UpdateImageJob(image)
+	if err != nil {
+		c.JSON(200, gin.H{"success": 0, "errMsg": err.Error()})
+		return
+	}
+	c.JSON(200, gin.H{"success": 1, "data": "更新成功"})
+}
+
+//删除镜像信息
+func DeleteImageJob(c *gin.Context) {
+	id := c.Param("id")
+	isv := service.Image{}
+	_, err := isv.DeleteImageJob(id)
+	if err != nil {
+		c.JSON(200, gin.H{"success": 0, "errMsg": err.Error()})
+		return
+	}
+	c.JSON(200, gin.H{"success": 1, "data": "更新成功"})
+}
+
+//打包镜像
+func PackageImage(c *gin.Context) {
+	ids := []dao.ImageJob{}
+	c.Bind(&ids)
+	fmt.Println(ids)
+	isv := service.Image{}
+	err := isv.PackageImage(ids)
+	if err != nil {
+		c.JSON(200, gin.H{"success": 0, "errMsg": err.Error()})
+		return
+	}
+	c.JSON(200, gin.H{"success": 1, "data": "打包成功"})
 }

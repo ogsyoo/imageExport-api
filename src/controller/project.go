@@ -3,16 +3,17 @@ package controller
 import (
 	"github.com/gin-gonic/gin"
 	"ogsyoo/imageExport-api/src/dao"
+	"ogsyoo/imageExport-api/src/model"
 	"ogsyoo/imageExport-api/src/service"
 	"strconv"
 )
 
 //添加导出项目任务
 func AddProject(c *gin.Context) {
-	project := new(dao.Project)
-	c.Bind(project)
+	project_iamges := new(model.ProjectImages)
+	c.Bind(project_iamges)
 	pvs := service.Project{}
-	err := pvs.InsertPorject(project)
+	err := pvs.InsertPorject(project_iamges)
 	if err != nil {
 		c.JSON(200, gin.H{"success": 0, "errMsg": err.Error()})
 		return
@@ -60,5 +61,17 @@ func GetListPage(c *gin.Context) {
 		c.JSON(200, gin.H{"success": 0, "errMsg": err.Error()})
 		return
 	}
-	c.JSON(200, ls)
+	c.JSON(200, gin.H{"success": 1, "data": ls})
+}
+
+//获取任务下面的镜像列表
+func GetImageListPage(c *gin.Context) {
+	pid := c.Param("pid")
+	pvs := service.Project{}
+	ls, err := pvs.GetProImage(pid)
+	if err != nil {
+		c.JSON(200, gin.H{"success": 0, "errMsg": err.Error()})
+		return
+	}
+	c.JSON(200, gin.H{"success": 1, "data": ls})
 }

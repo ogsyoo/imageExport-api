@@ -1,10 +1,16 @@
 package conf
 
+import (
+	"ogsyoo/imageExport-api/src/sse"
+)
+
 var (
+	SseClient   *sse.Server
 	DatabaseURL string
 	DocPath     string
 	RedisURL    string
 	RedisTag    string = "traffic"
+	PackeDoc    string
 )
 
 var Package = struct {
