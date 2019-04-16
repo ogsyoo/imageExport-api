@@ -11,6 +11,7 @@ var (
 	RedisURL    string
 	RedisTag    string = "traffic"
 	PackeDoc    string
+	UiDoc       string
 )
 
 var Package = struct {

@@ -2,15 +2,16 @@ package main
 
 import (
 	"fmt"
-	"github.com/gin-gonic/contrib/ginrus"
-	"github.com/sirupsen/logrus"
-	"github.com/spf13/pflag"
 	"ogsyoo/imageExport-api/src/common/client"
 	"ogsyoo/imageExport-api/src/common/conf"
 	"ogsyoo/imageExport-api/src/dao"
 	"ogsyoo/imageExport-api/src/router"
 	"ogsyoo/imageExport-api/src/sse"
 	"os"
+
+	"github.com/gin-gonic/contrib/ginrus"
+	"github.com/sirupsen/logrus"
+	"github.com/spf13/pflag"
 
 	"net/http"
 	"time"
@@ -23,6 +24,7 @@ var (
 	dbURL    = pflag.String("dbURL", "host=localhost port=54321 user=postgres password=password dbname=postgres sslmode=disable", "")
 	redisURL = pflag.String("redisURL", "redis://localhost:6379", "")
 	packeDoc = pflag.String("packeDoc", "d:\\images", "")
+	uiDoc    = pflag.String("uiDoc", "/app/dist", "")
 )
 
 func main() {
@@ -32,11 +34,6 @@ func main() {
 	initDB()
 	conf.SseClient = sse.NewServer(nil)
 	server()
-}
-
-func fileServer() {
-	fmt.Println("path:", fmt.Sprintf(`%s/image`, *prefix), *docPath+"/images")
-	http.Handle("/trans/api", http.FileServer(http.Dir(*docPath+"/images")))
 }
 
 func server() error {
@@ -70,6 +67,7 @@ func initConfig() {
 	conf.DocPath = *docPath
 	conf.RedisURL = *redisURL
 	conf.PackeDoc = *packeDoc
+	conf.UiDoc = *uiDoc
 }
 
 //初始化数据库

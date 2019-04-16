@@ -2,10 +2,11 @@ package router
 
 import (
 	"fmt"
-	"github.com/gin-gonic/gin"
 	"ogsyoo/imageExport-api/src/common/conf"
 	"ogsyoo/imageExport-api/src/controller"
 	"ogsyoo/imageExport-api/src/router/middleware/header"
+
+	"github.com/gin-gonic/gin"
 
 	"net/http"
 )
@@ -20,6 +21,7 @@ func Load(middleware ...gin.HandlerFunc) http.Handler {
 	e.Use(middleware...)
 	base := e.Group(fmt.Sprintf(`%s/`, conf.BaseInfo.Prefix))
 	{
+		base.StaticFS("/ui", http.Dir(conf.UiDoc))
 		sse := base.Group("/sse")
 		{
 			sse.GET("/event/:name", controller.Subcribe)
