@@ -19,7 +19,7 @@ import (
 
 var (
 	port     = pflag.Int("port", 8081, "")
-	prefix   = pflag.String("prefix", "/export", "")
+	prefix   = pflag.String("prefix", "/export/api", "")
 	docPath  = pflag.String("docPath", "/app/document", "")
 	dbURL    = pflag.String("dbURL", "host=localhost port=54321 user=postgres password=password dbname=postgres sslmode=disable", "")
 	redisURL = pflag.String("redisURL", "redis://localhost:6379", "")
