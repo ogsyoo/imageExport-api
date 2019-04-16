@@ -24,7 +24,7 @@ var (
 	dbURL    = pflag.String("dbURL", "host=localhost port=54321 user=postgres password=password dbname=postgres sslmode=disable", "")
 	redisURL = pflag.String("redisURL", "redis://localhost:6379", "")
 	packeDoc = pflag.String("packeDoc", "d:\\images", "")
-	uiDoc    = pflag.String("uiDoc", "/app/dist", "")
+	uiDoc    = pflag.String("uiDoc", "/app/ui", "")
 )
 
 func main() {

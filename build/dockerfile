@@ -2,5 +2,6 @@ FROM {{ BASEIMAGE }}
 MAINTAINER {{ AUTHOR }}
 LABEL Author={{ AUTHOR }} Name={{ PROJECT }} Version={{ VERSION }}
 COPY ./dist/. /app
+COPY ./ui/. /app/ui
 EXPOSE 80
 ENTRYPOINT ["/app/export-api", "--port=80", "--prefix=/export/api"]
