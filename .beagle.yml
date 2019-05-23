@@ -18,4 +18,3 @@ pipeline:
     repo: public/export-api
     version: "1.0"
     registry: hub.wodcloud.com
-
