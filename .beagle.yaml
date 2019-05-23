@@ -1,0 +1,21 @@
+workspace:
+  path: src/ogsyoo/imageExport-api
+
+clone:
+  git:
+    image: registry.cn-qingdao.aliyuncs.com/wod-devops/git:1.4.0
+
+pipeline:
+  build:
+    image: registry.cn-qingdao.aliyuncs.com/wod-devops/go:1.11.1-stretch
+    binary: export-api
+    main: src
+  docker:
+    image: registry.cn-qingdao.aliyuncs.com/wod-devops/docker:1.0
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    base: registry.cn-qingdao.aliyuncs.com/wod/alpine-glibc:3.8
+    repo: public/export-api
+    version: "1.0"
+    registry: hub.wodcloud.com
+
